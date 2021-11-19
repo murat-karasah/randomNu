@@ -12,19 +12,30 @@ namespace randomNu
             Console.WriteLine("lütfen sayı giriniz");
             int tahmin = Convert.ToInt32(Console.ReadLine());
             int i = 0;
+            
             while (i<10)
             {
                 
                 if (tahmin==rnd)
                 {
-                    Console.WriteLine("Tebrikler Doğru Tahmin Sayı :" + rnd);
+                    Console.WriteLine("Tebrikler Doğru Tahmin! Sayı :" + rnd +",>>>" +i+". Tahminde buldunuz");
                     break;
                 }
                 else
                 {
-                    int kalan = 9 - i;
+                    int kalan = 10 - i;
                     Console.WriteLine("Yanlış Tahmin lütfen sayı giriniz Kalan tahmin hakkınız " + kalan);
-                     tahmin = Convert.ToInt32(Console.ReadLine());
+                    if (tahmin>rnd)
+                    {
+                        Console.WriteLine("Tahmin değeriniz Sayıdan büyük " );
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tahmin değeriniz Sayıdan küçük " );
+
+                    }
+                    tahmin = Convert.ToInt32(Console.ReadLine());
                     i++;
                 }
                
