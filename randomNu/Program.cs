@@ -17,7 +17,7 @@ namespace randomNu
                 
                 if (tahmin==rnd)
                 {
-                    Console.WriteLine("Tebrikler Doğru Tahmin");
+                    Console.WriteLine("Tebrikler Doğru Tahmin Sayı :" + rnd);
                     break;
                 }
                 else
