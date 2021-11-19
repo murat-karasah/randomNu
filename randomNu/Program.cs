@@ -15,7 +15,6 @@ namespace randomNu
             
             while (i<10)
             {
-                
                 if (tahmin==rnd)
                 {
                     Console.WriteLine("Tebrikler Doğru Tahmin! Sayı :" + rnd +",>>>" +i+". Tahminde buldunuz");
@@ -28,12 +27,10 @@ namespace randomNu
                     if (tahmin>rnd)
                     {
                         Console.WriteLine("Tahmin değeriniz Sayıdan büyük " );
-
                     }
                     else
                     {
                         Console.WriteLine("Tahmin değeriniz Sayıdan küçük " );
-
                     }
                     tahmin = Convert.ToInt32(Console.ReadLine());
                     i++;
@@ -41,7 +38,7 @@ namespace randomNu
                
                 if (i == 10)
                 {
-                    Console.WriteLine("Tahmin Hakkınız Bitti");
+                    Console.WriteLine("Tahmin Hakkınız Bitti! Sayı: " + rnd);
                     break;
                 }
                 
